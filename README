@@ -11,12 +11,18 @@ deps:
 INSTALLATION
 ------------
 	1. get curl
-	2. get selenium (seleniumhq.org)
+	2. get selenium server standalone from http://seleniumhq.org
+	3. pip install selenium
 	3. get your de-captcher.com credentials and create a file named
 		 "decaptcha_creds" with your login:password.
+		 example:
+		 ---------------------------- snip -------------
+		 stupidspammeruser:secretpassword
+		 ---------------------------- snap -------------
 
 USAGE
 -----
+	0) run ./run_selenium.sh to start the selenium server
 	1) run ./captcha.py to check if your re-captcha.com credentials are right
 	2) edit reac.py: change 'username' and 'password' to your desired account username/password
 	3) run ./reac.py
