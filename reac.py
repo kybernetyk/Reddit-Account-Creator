@@ -15,8 +15,8 @@
 from selenium import webdriver
 import captcha
 
-username = "archlocherlol"
-password = "warbird"
+username = "reac"
+password = "reac"
 
 # don't change anything below
 
@@ -44,6 +44,4 @@ for btn in browser.find_elements_by_class_name('button'):
 	if btn.text == 'create account':
 		btn.click()
 		break
-	else:
-		print "couldn't find button!"
 
