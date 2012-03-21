@@ -15,8 +15,8 @@
 from selenium import webdriver
 import captcha
 
-username = "reac"
-password = "reac"
+username = "koksbanane2001"
+password = "ficken"
 
 # don't change anything below
 
@@ -35,7 +35,11 @@ browser.find_element_by_id('passwd2_reg').click()
 browser.find_element_by_id('passwd2_reg').send_keys(password)
 
 captcha_url = browser.find_element_by_class_name('capimage').get_attribute('src')
+
+print "solving captcha: " + captcha_url
+print "be patient ..."
 solved_captcha = captcha.solve(captcha_url)
+print "done."
 
 browser.find_element_by_id('captcha_').click()
 browser.find_element_by_id('captcha_').send_keys(solved_captcha)
